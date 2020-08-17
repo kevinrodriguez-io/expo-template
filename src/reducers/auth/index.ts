@@ -10,7 +10,7 @@ const initialState: AuthSliceState = {
   isAuthenticated: false,
 }
 
-const medicalHistory = createSlice({
+const authSlice = createSlice({
   name: 'auth',
   initialState,
   reducers: {
@@ -20,6 +20,6 @@ const medicalHistory = createSlice({
   },
 })
 
-export const { setAuthenticationValues } = medicalHistory.actions
+export const { setAuthenticationValues } = authSlice.actions
 
-export default medicalHistory.reducer
+export default authSlice.reducer
