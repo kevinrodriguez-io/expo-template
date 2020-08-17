@@ -22,13 +22,13 @@ const store = configureStore({
 
 const DEMO_IS_AUTHENTICATED = true
 
-const Skippy: React.FC = () => {
+const XProduct: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [isAuthenticated, setIsAuthenticated] = useState(true)
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsLoading(false)
-      setIsAuthenticated(true)
+      setIsAuthenticated(DEMO_IS_AUTHENTICATED)
     }, 3000)
     return () => clearTimeout(timeout)
   }, [])
@@ -53,7 +53,7 @@ export const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <Provider store={store}>
-        <Skippy />
+        <XProduct />
       </Provider>
     </ThemeProvider>
   )

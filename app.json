@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Skippy",
-    "slug": "Skippy",
+    "name": "xproduct",
+    "slug": "xproduct",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/assets/icon.png",
