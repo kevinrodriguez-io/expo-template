@@ -8,7 +8,9 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "strict": true,
-    "baseUrl": "src"
+    "baseUrl": "./src",
+    "rootDirs": ["./src"]
   },
-  "include": ["src"]
+  "include": ["./src", "./App.tsx"],
+  "exclude": ["node_modules", "**/build", "**/__tests__"]
 }
